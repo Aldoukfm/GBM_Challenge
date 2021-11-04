@@ -1,0 +1,90 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-module-flags: -target x86_64-apple-ios13.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ConstraintHelpers
+import Swift
+import UIKit
+public enum LayoutEdge {
+  case rightToLeft
+  case leftToRight
+  case topToBottom
+  case bottomToTop
+  public var sourceAttribute: UIKit.NSLayoutConstraint.Attribute {
+    get
+  }
+  public var destinationAttribute: UIKit.NSLayoutConstraint.Attribute {
+    get
+  }
+  public static func == (a: ConstraintHelpers.LayoutEdge, b: ConstraintHelpers.LayoutEdge) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension UIEdgeInsets {
+  public init(_ constant: CoreGraphics.CGFloat)
+  public init(_ x: CoreGraphics.CGFloat, _ y: CoreGraphics.CGFloat)
+}
+extension NSLayoutConstraint.Attribute {
+  public func constant(from insets: UIKit.UIEdgeInsets) -> CoreGraphics.CGFloat
+}
+extension String {
+  public func heightToFitInLabel(font: UIKit.UIFont, width: CoreGraphics.CGFloat) -> CoreGraphics.CGFloat
+  public func heightToFitInTextView(font: UIKit.UIFont, width: CoreGraphics.CGFloat, containerInset: UIKit.UIEdgeInsets = UIEdgeInsets(top: 8.0, left: 0.0, bottom: 8.0, right: 0.0), lineFragmentPadding: CoreGraphics.CGFloat = 5) -> CoreGraphics.CGFloat
+  public func sizeToFit(font: UIKit.UIFont) -> CoreGraphics.CGSize
+}
+public enum LayoutCorner {
+  case topRight
+  case topLeft
+  case bottomRight
+  case bottomLeft
+  public var yAttribute: UIKit.NSLayoutConstraint.Attribute {
+    get
+  }
+  public var xAttribute: UIKit.NSLayoutConstraint.Attribute {
+    get
+  }
+  public static func == (a: ConstraintHelpers.LayoutCorner, b: ConstraintHelpers.LayoutCorner) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+extension UIView {
+  public func addSubviews(_ views: [UIKit.UIView])
+  public func constraintEdge(_ edge: ConstraintHelpers.LayoutEdge, to view: Any?, inset: CoreGraphics.CGFloat = 0)
+  public func constraintTo(_ view: Any?, attributes: [UIKit.NSLayoutConstraint.Attribute] = [.top, .left, .bottom, .right], insets: UIKit.UIEdgeInsets, priority: Swift.Float = 999)
+  public func constraintTo(_ view: Any?, attributes: [UIKit.NSLayoutConstraint.Attribute] = [.top, .left, .bottom, .right], insets: CoreGraphics.CGFloat = 0, priority: Swift.Float = 999)
+  public func constraintCorner(_ corner: ConstraintHelpers.LayoutCorner, to view: UIKit.UIView, corner destinationCorner: ConstraintHelpers.LayoutCorner, insets: UIKit.UIEdgeInsets = .zero)
+  public func constraintWidthTo(_ view: Any? = nil, attribute: UIKit.NSLayoutConstraint.Attribute = .width, multiplier: CoreGraphics.CGFloat = 1.0, constant: CoreGraphics.CGFloat = 0.0)
+  public func constraintHeightTo(_ view: Any? = nil, attribute: UIKit.NSLayoutConstraint.Attribute = .height, multiplier: CoreGraphics.CGFloat = 1.0, constant: CoreGraphics.CGFloat = 0.0)
+  public func constraintSizeTo(_ size: CoreGraphics.CGSize)
+}
+extension CGSize {
+  public static func square(_ length: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+  public var diagonal: CoreGraphics.CGFloat {
+    get
+  }
+}
+public func * (left: CoreGraphics.CGSize, right: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+public func * (left: CoreGraphics.CGFloat, right: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+public func *= (left: inout CoreGraphics.CGSize, right: CoreGraphics.CGFloat)
+public func / (left: CoreGraphics.CGSize, right: CoreGraphics.CGFloat) -> CoreGraphics.CGSize
+public func / (left: CoreGraphics.CGFloat, right: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+public func /= (left: inout CoreGraphics.CGSize, right: CoreGraphics.CGFloat)
+public func + (left: CoreGraphics.CGSize, right: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+public func += (left: inout CoreGraphics.CGSize, right: CoreGraphics.CGSize)
+public func - (left: CoreGraphics.CGSize, right: CoreGraphics.CGSize) -> CoreGraphics.CGSize
+public func -= (left: inout CoreGraphics.CGSize, right: CoreGraphics.CGSize)
+extension Array where Element : UIKit.UIView {
+  public func constraintTo(_ view: Any?, attributes: [UIKit.NSLayoutConstraint.Attribute] = [.top, .left, .bottom, .right], insets: UIKit.UIEdgeInsets = .zero)
+  public func stackVertical(spacing: CoreGraphics.CGFloat = 0, align: Swift.Bool = false)
+  public func stackHorizontal(spacing: CoreGraphics.CGFloat = 0, align: Swift.Bool = false)
+  public func constraintHeight(to constant: CoreGraphics.CGFloat)
+  public func constraintWidth(to constant: CoreGraphics.CGFloat)
+  public func constraintWidthTo(_ view: Any? = nil, attribute: UIKit.NSLayoutConstraint.Attribute = .width, multiplier: CoreGraphics.CGFloat = 1.0, constant: CoreGraphics.CGFloat = 0.0)
+  public func constraintHeightTo(_ view: Any? = nil, attribute: UIKit.NSLayoutConstraint.Attribute = .height, multiplier: CoreGraphics.CGFloat = 1.0, constant: CoreGraphics.CGFloat = 0.0)
+}
+extension ConstraintHelpers.LayoutEdge : Swift.Equatable {}
+extension ConstraintHelpers.LayoutEdge : Swift.Hashable {}
+extension ConstraintHelpers.LayoutCorner : Swift.Equatable {}
+extension ConstraintHelpers.LayoutCorner : Swift.Hashable {}

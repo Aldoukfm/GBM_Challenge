@@ -1,0 +1,4 @@
+framework module ConstraintHelpers {
+  header "ConstraintHelpers-Swift.h"
+  requires objc
+}
