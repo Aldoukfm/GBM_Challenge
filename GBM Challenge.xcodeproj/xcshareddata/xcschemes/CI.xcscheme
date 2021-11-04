@@ -11,8 +11,66 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      enableThreadSanitizer = "YES"
+      userAttachmentLifetime = "keepAlways"
       codeCoverageEnabled = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "GBMChallengeiOS"
+            BuildableName = "GBMChallengeiOS"
+            BlueprintName = "GBMChallengeiOS"
+            ReferencedContainer = "container:GBMChallengeiOS">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "GBMChallengeKit"
+            BuildableName = "GBMChallengeKit"
+            BlueprintName = "GBMChallengeKit"
+            ReferencedContainer = "container:GBMChallengeKit">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A0A4991D27248AF400DE49AA"
+            BuildableName = "GBM Challenge.app"
+            BlueprintName = "GBM Challenge"
+            ReferencedContainer = "container:GBM Challenge.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "GBMChallengeiOSTests"
+            BuildableName = "GBMChallengeiOSTests"
+            BlueprintName = "GBMChallengeiOSTests"
+            ReferencedContainer = "container:GBMChallengeiOS">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A01E71DA27249406006EF753"
+            BuildableName = "GBM ChallengeTests.xctest"
+            BlueprintName = "GBM ChallengeTests"
+            ReferencedContainer = "container:GBM Challenge.xcodeproj">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "GBMChallengeKitTests"
+            BuildableName = "GBMChallengeKitTests"
+            BlueprintName = "GBMChallengeKitTests"
+            ReferencedContainer = "container:GBMChallengeKit">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "IPCLocalFetcherIntegrationTests"
+            BuildableName = "IPCLocalFetcherIntegrationTests"
+            BlueprintName = "IPCLocalFetcherIntegrationTests"
+            ReferencedContainer = "container:GBMChallengeKit">
+         </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "IPCRemoteFetcherEndToEndTests"
+            BuildableName = "IPCRemoteFetcherEndToEndTests"
+            BlueprintName = "IPCRemoteFetcherEndToEndTests"
+            ReferencedContainer = "container:GBMChallengeKit">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -33,7 +91,7 @@
                BlueprintIdentifier = "GBMChallengeiOSTests"
                BuildableName = "GBMChallengeiOSTests"
                BlueprintName = "GBMChallengeiOSTests"
-               ReferencedContainer = "container:../../Documents/Libraries/GBM Challenge/GBMChallengeiOS">
+               ReferencedContainer = "container:GBMChallengeiOS">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -44,7 +102,7 @@
                BlueprintIdentifier = "GBMChallengeKitTests"
                BuildableName = "GBMChallengeKitTests"
                BlueprintName = "GBMChallengeKitTests"
-               ReferencedContainer = "container:../../Documents/Libraries/GBM Challenge/GBMChallengeKit">
+               ReferencedContainer = "container:GBMChallengeKit">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -55,7 +113,7 @@
                BlueprintIdentifier = "IPCLocalFetcherIntegrationTests"
                BuildableName = "IPCLocalFetcherIntegrationTests"
                BlueprintName = "IPCLocalFetcherIntegrationTests"
-               ReferencedContainer = "container:../../Documents/Libraries/GBM Challenge/GBMChallengeKit">
+               ReferencedContainer = "container:GBMChallengeKit">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -66,7 +124,7 @@
                BlueprintIdentifier = "IPCRemoteFetcherEndToEndTests"
                BuildableName = "IPCRemoteFetcherEndToEndTests"
                BlueprintName = "IPCRemoteFetcherEndToEndTests"
-               ReferencedContainer = "container:../../Documents/Libraries/GBM Challenge/GBMChallengeKit">
+               ReferencedContainer = "container:GBMChallengeKit">
             </BuildableReference>
          </TestableReference>
       </Testables>
