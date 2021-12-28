@@ -8,16 +8,26 @@ import Combine
 final class IPCRemoteFetcherTests: XCTestCase {
     
     func test_init_doesNotRequestDataFromURL() {
+        //Arrange
         let (_, client) = makeSUT()
+        
+        //Act
+        
+        
+        //Asssert
         XCTAssert(client.requestedURLs.isEmpty)
     }
     
     func test_fethValues_RequestDataFromURL() {
+        //Arrange
         let expectedURL = URL(string: "expectedURL.com")!
         let (sut, client) = makeSUT(url: expectedURL)
         
+        //Act
         _ = PublisherSpy(sut.fetchValues())
         
+        
+        //Assert
         XCTAssertEqual(client.requestedURLs, [expectedURL])
     }
     

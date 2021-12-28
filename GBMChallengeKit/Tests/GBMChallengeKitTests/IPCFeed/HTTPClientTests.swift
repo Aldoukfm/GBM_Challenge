@@ -24,11 +24,14 @@ class HTTPClientTests: XCTestCase {
     func test_fetchData_performsGETRequestWithURL() throws {
         let sut = makeSUT()
         let url = makeAnyURL()
-        
         let spy = PublisherSpy(URLProtocolStub.requestObserver())
+        
+        
         _ = PublisherSpy(sut.fetchData(from: url))
         
         let request = try wait(spy).get()
+        
+        
         XCTAssertEqual(["GET"], [request.httpMethod])
         XCTAssertEqual([url], [request.url])
     }
