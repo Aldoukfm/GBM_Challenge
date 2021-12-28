@@ -243,3 +243,47 @@ extension TitleCollectionView: UICollectionViewDelegateFlowLayout {
         return mask
     }
 }
+
+#if DEBUG
+
+import SwiftUI
+
+struct RangeControlProvider: PreviewProvider {
+    static var previews: some View {
+        Group {
+            RangeControlContainer(options: makeTestOptions(), selectedIndex: 0)
+                .frame(maxHeight: 45)
+                .previewLayout(.sizeThatFits)
+        }
+    }
+    
+    static func makeTestOptions() -> [String] {
+        ["max", "4 hr", "1 hr", "30 min", "5 min"]
+    }
+    
+    struct RangeControlContainer: UIViewRepresentable {
+        typealias UIViewType = RangeControlCell
+        
+        var options: [String]
+        var selectedIndex: CurrentValueSubject<Int, Never>
+        
+        init(options: [String], selectedIndex: Int) {
+            self.options = options
+            self.selectedIndex = CurrentValueSubject(selectedIndex)
+        }
+        
+        func makeUIView(context: Context) -> RangeControlCell {
+            let cell = RangeControlCell()
+            cell.bind(viewModel: RangeControlViewModel(options: options, selectedIndex: selectedIndex))
+            return cell
+        }
+        
+        func updateUIView(_ uiView: RangeControlCell, context: Context) {
+            uiView.border()
+        }
+    }
+}
+
+#endif
+
+
