@@ -96,8 +96,9 @@ public class LoginViewController: UIViewController {
         stack.setCustomSpacing(80, after: descriptionLbl)
         stack.setCustomSpacing(130, after: biometryImg)
         
-        loginBtn.constraintHeightTo(constant: 50)
         biometryImg.constraintSizeTo(CGSize(width: 100, height: 100))
+        
+        loginBtn.constraintHeightTo(constant: 50)
         loginBtn.constraintWidthTo(stack)
         
         view.addSubview(stack)
@@ -129,15 +130,21 @@ struct LoginProvider: PreviewProvider {
     
     static var previews: some View {
         Group {
-            VCContainer().preferredColorScheme(.light).edgesIgnoringSafeArea(.all)
+            VCContainer(biometry: .faceid)
+                .edgesIgnoringSafeArea(.all)
         }
     }
     
     struct VCContainer: UIViewControllerRepresentable {
         typealias UIViewControllerType = LoginViewController
         
+        let auth: AuthMock
+        
+        init(biometry: BiometryType) {
+            self.auth = AuthMock(biometry: biometry)
+        }
+        
         func makeUIViewController(context: Context) -> LoginViewController {
-            let auth = AuthSpy()
             let viewModel = LoginViewModel(auth: auth)
             let vc = LoginViewController(viewModel: viewModel)
             return vc
@@ -148,16 +155,15 @@ struct LoginProvider: PreviewProvider {
         }
     }
     
-    class AuthSpy: BiometryAuthType {
+    class AuthMock: BiometryAuthType {
         
-        var supportedBiometry: BiometryType = .touchid
+        let supportedBiometry: BiometryType
         
+        init(biometry: BiometryType) {
+            self.supportedBiometry = biometry
+        }
         
         private var subjects: [PassthroughSubject<Void, Error>] = []
-        
-        var authenticationCallCount: Int {
-            subjects.count
-        }
         
         func authenticateUser() -> AnyPublisher<Void, Error> {
             let subject = PassthroughSubject<Void, Error>()
