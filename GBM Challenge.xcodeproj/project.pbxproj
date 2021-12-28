@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A003C0EB272A33D800C8CDD3 /* IPCFeedUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003C0EA272A33D800C8CDD3 /* IPCFeedUIIntegrationTests.swift */; };
-		A003C0FC272B147100C8CDD3 /* CombineHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = A003C0FB272B147100C8CDD3 /* CombineHelpers */; };
 		A003C106272B2AAE00C8CDD3 /* CombineHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = A003C105272B2AAE00C8CDD3 /* CombineHelpers */; };
 		A003C10A272B2AAE00C8CDD3 /* TestHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = A003C109272B2AAE00C8CDD3 /* TestHelpers */; };
-		A0073FA627331A6600BD3A33 /* GBMChallengeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0073FA527331A6600BD3A33 /* GBMChallengeKit */; };
 		A0073FA827331B3700BD3A33 /* GBMChallengeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0073FA727331B3700BD3A33 /* GBMChallengeKit */; };
 		A0073FAA27331BA300BD3A33 /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0073FA927331BA300BD3A33 /* XCTestCase+Helpers.swift */; };
 		A059B0E9273343F400D38239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A4992A27248AF700DE49AA /* Assets.xcassets */; };
@@ -26,8 +24,8 @@
 		A05E35262731AE9C00F89AD5 /* IPCFeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05E35252731AE9C00F89AD5 /* IPCFeedUIComposer.swift */; };
 		A05E35272731AEC500F89AD5 /* IPCFeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05E35252731AE9C00F89AD5 /* IPCFeedUIComposer.swift */; };
 		A05E352D2731CEAF00F89AD5 /* LoginUIIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05E352C2731CEAF00F89AD5 /* LoginUIIntegrationTests.swift */; };
-		A06DC41D273327A5001004BA /* GBMChallengeiOS in Frameworks */ = {isa = PBXBuildFile; productRef = A06DC41C273327A5001004BA /* GBMChallengeiOS */; };
-		A06DC41F273327B3001004BA /* GBMChallengeiOS in Frameworks */ = {isa = PBXBuildFile; productRef = A06DC41E273327B3001004BA /* GBMChallengeiOS */; };
+		A07C9D712774E3B400648DDB /* GBMChallengeiOS in Frameworks */ = {isa = PBXBuildFile; productRef = A07C9D702774E3B400648DDB /* GBMChallengeiOS */; };
+		A07C9D732774E3B800648DDB /* GBMChallengeKit in Frameworks */ = {isa = PBXBuildFile; productRef = A07C9D722774E3B800648DDB /* GBMChallengeKit */; };
 		A0A4992227248AF400DE49AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4992127248AF400DE49AA /* AppDelegate.swift */; };
 		A0A4992427248AF400DE49AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4992327248AF400DE49AA /* SceneDelegate.swift */; };
 		A0A4992E27248AF700DE49AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A4992C27248AF700DE49AA /* LaunchScreen.storyboard */; };
@@ -35,6 +33,7 @@
 		A0F47ECA272F7B1D009D6E39 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = A0F47EC9272F7B1D009D6E39 /* Charts */; };
 		A0F72D2C27320E72000C39BF /* LoginUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72D2B27320E72000C39BF /* LoginUIComposer.swift */; };
 		A0F72D2D27320EAF000C39BF /* LoginUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F72D2B27320E72000C39BF /* LoginUIComposer.swift */; };
+		A0FE0DFE27762723006014BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4992327248AF400DE49AA /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 /* Begin PBXFileReference section */
 		A003C0EA272A33D800C8CDD3 /* IPCFeedUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCFeedUIIntegrationTests.swift; sourceTree = "<group>"; };
 		A0073FA927331BA300BD3A33 /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
-		A0073FAB27331D4F00BD3A33 /* GBMChallengeiOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GBMChallengeiOS; sourceTree = "<group>"; };
 		A01E71DB27249406006EF753 /* GBM ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GBM ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A059B0EA27335E7800D38239 /* CoordinatorIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorIntegrationTests.swift; sourceTree = "<group>"; };
 		A059B0ED273364C600D38239 /* LoginUIIntegrationTests+AuthSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginUIIntegrationTests+AuthSpy.swift"; sourceTree = "<group>"; };
@@ -59,9 +57,6 @@
 		A059B0F427337CCF00D38239 /* IPCFeedViewControlelr+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IPCFeedViewControlelr+TestHelpers.swift"; sourceTree = "<group>"; };
 		A059B0F627337D1200D38239 /* LoginViewController+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+TestHelpers.swift"; sourceTree = "<group>"; };
 		A059B0F827337D3E00D38239 /* UIKit+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+TestHelpers.swift"; sourceTree = "<group>"; };
-		A059B1162733826D00D38239 /* GBMChallengeKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GBMChallengeKit; sourceTree = "<group>"; };
-		A059B1172733826D00D38239 /* CombineHelpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CombineHelpers; sourceTree = "<group>"; };
-		A059B1182733826D00D38239 /* TestHelpers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestHelpers; sourceTree = "<group>"; };
 		A05E35252731AE9C00F89AD5 /* IPCFeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCFeedUIComposer.swift; sourceTree = "<group>"; };
 		A05E352C2731CEAF00F89AD5 /* LoginUIIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIIntegrationTests.swift; sourceTree = "<group>"; };
 		A0A4991E27248AF400DE49AA /* GBM Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GBM Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +66,8 @@
 		A0A4992D27248AF700DE49AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0A4992F27248AF700DE49AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0A4993B27248D2F00DE49AA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A0DF707E2774E2C2008EF26E /* GBMChallengeKit */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GBMChallengeKit; sourceTree = "<group>"; };
+		A0DF707F2774E2CB008EF26E /* GBMChallengeiOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GBMChallengeiOS; sourceTree = "<group>"; };
 		A0F72D2B27320E72000C39BF /* LoginUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUIComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,7 +80,6 @@
 				A003C10A272B2AAE00C8CDD3 /* TestHelpers in Frameworks */,
 				A003C106272B2AAE00C8CDD3 /* CombineHelpers in Frameworks */,
 				A0F47ECA272F7B1D009D6E39 /* Charts in Frameworks */,
-				A06DC41D273327A5001004BA /* GBMChallengeiOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,9 +87,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0073FA627331A6600BD3A33 /* GBMChallengeKit in Frameworks */,
-				A003C0FC272B147100C8CDD3 /* CombineHelpers in Frameworks */,
-				A06DC41F273327B3001004BA /* GBMChallengeiOS in Frameworks */,
+				A07C9D732774E3B800648DDB /* GBMChallengeKit in Frameworks */,
+				A07C9D712774E3B400648DDB /* GBMChallengeiOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				A0A4992127248AF400DE49AA /* AppDelegate.swift */,
-				A0A4992327248AF400DE49AA /* SceneDelegate.swift */,
 				A0A4992A27248AF700DE49AA /* Assets.xcassets */,
 				A0A4992C27248AF700DE49AA /* LaunchScreen.storyboard */,
 				A0A4992F27248AF700DE49AA /* Info.plist */,
@@ -156,10 +150,7 @@
 		A0A4991527248AF300DE49AA = {
 			isa = PBXGroup;
 			children = (
-				A059B1182733826D00D38239 /* TestHelpers */,
-				A059B1172733826D00D38239 /* CombineHelpers */,
-				A0073FAB27331D4F00BD3A33 /* GBMChallengeiOS */,
-				A059B1162733826D00D38239 /* GBMChallengeKit */,
+				A0DF707D2774E2C2008EF26E /* Packages */,
 				A0A4992027248AF400DE49AA /* GBM Challenge */,
 				A01E71DC27249406006EF753 /* GBM ChallengeTests */,
 				A0A4991F27248AF400DE49AA /* Products */,
@@ -179,11 +170,21 @@
 		A0A4992027248AF400DE49AA /* GBM Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				A0A4992327248AF400DE49AA /* SceneDelegate.swift */,
 				A0A4993B27248D2F00DE49AA /* Coordinator.swift */,
 				A01E71D627249256006EF753 /* Resources */,
 				A05E35242731AE7000F89AD5 /* Composers */,
 			);
 			path = "GBM Challenge";
+			sourceTree = "<group>";
+		};
+		A0DF707D2774E2C2008EF26E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A0DF707E2774E2C2008EF26E /* GBMChallengeKit */,
+				A0DF707F2774E2CB008EF26E /* GBMChallengeiOS */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,7 +209,6 @@
 				A003C109272B2AAE00C8CDD3 /* TestHelpers */,
 				A0F47EC9272F7B1D009D6E39 /* Charts */,
 				A0073FA727331B3700BD3A33 /* GBMChallengeKit */,
-				A06DC41C273327A5001004BA /* GBMChallengeiOS */,
 			);
 			productName = "GBM ChallengeTests";
 			productReference = A01E71DB27249406006EF753 /* GBM ChallengeTests.xctest */;
@@ -228,9 +228,8 @@
 			);
 			name = "GBM Challenge";
 			packageProductDependencies = (
-				A003C0FB272B147100C8CDD3 /* CombineHelpers */,
-				A0073FA527331A6600BD3A33 /* GBMChallengeKit */,
-				A06DC41E273327B3001004BA /* GBMChallengeiOS */,
+				A07C9D702774E3B400648DDB /* GBMChallengeiOS */,
+				A07C9D722774E3B800648DDB /* GBMChallengeKit */,
 			);
 			productName = "GBM Challenge";
 			productReference = A0A4991E27248AF400DE49AA /* GBM Challenge.app */;
@@ -302,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A05E352D2731CEAF00F89AD5 /* LoginUIIntegrationTests.swift in Sources */,
+				A0FE0DFE27762723006014BC /* SceneDelegate.swift in Sources */,
 				A059B0F327337C5D00D38239 /* IPCFeedUIIntegrationTests+CounterSpy.swift in Sources */,
 				A059B0F727337D1200D38239 /* LoginViewController+TestHelpers.swift in Sources */,
 				A0F72D2D27320EAF000C39BF /* LoginUIComposer.swift in Sources */,
@@ -618,10 +618,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A003C0FB272B147100C8CDD3 /* CombineHelpers */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = CombineHelpers;
-		};
 		A003C105272B2AAE00C8CDD3 /* CombineHelpers */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CombineHelpers;
@@ -630,21 +626,17 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = TestHelpers;
 		};
-		A0073FA527331A6600BD3A33 /* GBMChallengeKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = GBMChallengeKit;
-		};
 		A0073FA727331B3700BD3A33 /* GBMChallengeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GBMChallengeKit;
 		};
-		A06DC41C273327A5001004BA /* GBMChallengeiOS */ = {
+		A07C9D702774E3B400648DDB /* GBMChallengeiOS */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = GBMChallengeiOS;
 		};
-		A06DC41E273327B3001004BA /* GBMChallengeiOS */ = {
+		A07C9D722774E3B800648DDB /* GBMChallengeKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = GBMChallengeiOS;
+			productName = GBMChallengeKit;
 		};
 		A0F47EC9272F7B1D009D6E39 /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
